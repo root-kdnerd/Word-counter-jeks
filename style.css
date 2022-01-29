@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+h1{
+    margin: 2rem;
+}
+
+h5{
+    margin: .6rem;
+}
+
+textarea{
+    padding: .4rem;
+    font-size: 16px;
+    width: 79%;
+    outline: none;
+}
+
+button{
+    display: block;
+}
