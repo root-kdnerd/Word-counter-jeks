@@ -14,7 +14,7 @@ This process makes setting this application up very simple. The following steps 
 - Clone the repository
 - Build the Docker image
   ```
-  Docker build -t wordcounter.
+  Docker build -t wordcounter .
   ```
 - Run the Dockerfile
   ```
