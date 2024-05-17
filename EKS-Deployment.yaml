@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-httpd-deployment
+  name: word-counter-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: my-httpd
+      app: word-counter
   template:
     metadata:
       labels:
-        app: my-httpd
+        app: word-counter
     spec:
       containers:
-      - name: my-httpd-container
-        image: httpd:alpine
+      - name: word-counter-container
+        image: 313382416572.dkr.ecr.us-east-1.amazonaws.com/jenkins:latest
         ports:
         - containerPort: 80
         volumeMounts:
@@ -28,10 +28,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-httpd-service
+  name: word-counter-service
 spec:
   selector:
-    app: my-httpd
+    app: word-counter
   ports:
     - protocol: TCP
       port: 80
