@@ -15,6 +15,7 @@ spec:
       containers:
       - name: word-counter-container
         image: 891377085506.dkr.ecr.us-east-2.amazonaws.com/jeksrepo:word-counter-latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
 
