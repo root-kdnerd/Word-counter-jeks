@@ -21,4 +21,4 @@ function submitWord() {
 }
 
 //footer copyright text
-footerText.innerHTML = `copyright &copy; Aahil ${year}`;
+footerText.innerHTML = `copyright &copy; Noah's ${year}`;
